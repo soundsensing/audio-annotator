@@ -249,7 +249,7 @@ Annotator.prototype = {
         var my = this;
         $.ajax({
             type: 'POST',
-            url: $.getJSON(postUrl),
+            url: postUrl,
             contentType: 'application/json',
             data: JSON.stringify(content)
         })
