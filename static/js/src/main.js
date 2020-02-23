@@ -217,6 +217,7 @@ Annotator.prototype = {
             this.sendingResponse = true;
             // Get data about the annotations the user has created
             var content = {
+                audio_id: this.currentTask.audio_id,
                 task_start_time: this.taskStartTime,
                 task_end_time: new Date().getTime(),
                 visualization: this.wavesurfer.params.visualization,
